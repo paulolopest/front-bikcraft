@@ -1,0 +1,31 @@
+.header {
+	display: flex;
+	width: 100vw;
+	background-color: black;
+	height: 12vh;
+	justify-content: center;
+
+	ul {
+		display: flex;
+		gap: 0 2rem;
+	}
+
+	a {
+		color: white;
+	}
+}
+
+.header-container {
+	display: flex;
+	width: 75vw;
+	align-items: center;
+	justify-content: space-between;
+
+	img {
+		height: 2rem;
+	}
+
+	a {
+		font-size: 1.1rem;
+	}
+}

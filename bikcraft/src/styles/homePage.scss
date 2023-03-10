@@ -1,0 +1,66 @@
+.home {
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+	align-items: center;
+	color: white;
+}
+
+.home-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 75vh;
+	width: 75vw;
+	color: white;
+	position: relative;
+
+	div {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem 0;
+		place-content: center;
+		place-items: start;
+
+		h1 {
+			font-size: 3.5rem;
+		}
+		p {
+			font-size: 1.3rem;
+			color: #aeaeae;
+		}
+		span {
+			color: #ffc800;
+		}
+
+		button {
+			font-size: 1rem;
+			border-radius: 4px;
+			font-weight: bold;
+			border: none;
+			padding: 1rem 1.3rem;
+			background-color: #ffc800;
+			cursor: pointer;
+
+			&:hover {
+				background-color: #e7a50c;
+			}
+		}
+	}
+
+	img {
+		height: 88vh;
+		width: 35rem;
+		object-fit: cover;
+		right: 0rem;
+		position: absolute;
+		object-position: center center;
+	}
+}
+
+.bike-example {
+	margin-left: 20px;
+	padding-top: 15vh;
+	width: 100vw;
+	background-color: white;
+	color: black;
+}
