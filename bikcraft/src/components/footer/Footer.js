@@ -13,31 +13,33 @@ const Footer = () => {
 						<img src={logo} alt="Logo"></img>
 					</div>
 
-					<div className="footer-card">
-						<p>Contact</p>
+					<div className="footer-card-container">
+						<div className="footer-card">
+							<p>Information</p>
 
-						<ul>
-							<li>+55 21 9999-9999</li>
-							<li>contato@bikcraft.com</li>
-							<li>Street Ali Perto, 42 - Botafogo</li>
-							<li>Rio de Janeiro - RJ</li>
-						</ul>
-
-						<div className="footer-sm">
-							<img src={facebook} alt="Logo"></img>
-							<img src={instagram} alt="Logo"></img>
-							<img src={youtube} alt="Logo"></img>
+							<ul>
+								<li>Bikes</li>
+								<li>Secures</li>
+								<li>Contact</li>
+								<li>Terms and conditions</li>
+							</ul>
 						</div>
-					</div>
-					<div className="footer-card">
-						<p>Information</p>
+						<div className="footer-card">
+							<p>Contact</p>
 
-						<ul>
-							<li>Bikes</li>
-							<li>Secures</li>
-							<li>Contact</li>
-							<li>Terms and conditions</li>
-						</ul>
+							<ul>
+								<li>+55 21 9999-9999</li>
+								<li>contato@bikcraft.com</li>
+								<li>Street Ali Perto, 42 - Botafogo</li>
+								<li>Rio de Janeiro - RJ</li>
+							</ul>
+
+							<div className="footer-sm">
+								<img src={facebook} alt="Logo"></img>
+								<img src={instagram} alt="Logo"></img>
+								<img src={youtube} alt="Logo"></img>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

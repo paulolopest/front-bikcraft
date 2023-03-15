@@ -53,7 +53,7 @@
 
 	img {
 		height: 88vh;
-		width: 30rem;
+		width: 40%;
 		object-fit: cover;
 		right: 0rem;
 		position: absolute;
@@ -65,13 +65,13 @@
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	height: 100vh;
+	height: auto;
 	background: white;
 	color: black;
-	padding: 12rem 0rem;
+	padding: 8rem 0;
 
 	h1 {
-		background-color: yellow;
+		margin-left: 11rem;
 		align-self: start;
 		font-size: 3rem;
 	}
@@ -79,49 +79,49 @@
 	span {
 		color: #ffc800;
 	}
-}
 
-.ex-card-container {
-	display: flex;
-	padding: 3rem 4rem;
-	gap: 2rem;
-}
-
-.bike-card {
-	display: flex;
-	flex-direction: column;
-	max-width: auto;
-	gap: 1rem 0;
-	position: relative;
-	cursor: pointer;
-	transition: 0.2s ease;
-
-	&:hover {
-		span {
-			width: 30px;
-			transition: 0.2s ease;
-		}
-
-		h2 {
-			margin-left: 30px;
-			transition: 0.2s ease;
-		}
+	.ex-card-container {
+		display: flex;
+		padding: 3rem 4rem;
+		gap: 2rem;
 	}
 
-	img {
-		display: block;
-		max-width: 100%;
-		border-radius: 4px;
-	}
-
-	span {
-		width: 0px;
-		height: 30px;
-		background-color: #ffc800;
-		position: absolute;
-		top: 32.6rem;
-		left: -0.4rem;
+	.bike-card {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem 0;
+		position: relative;
+		cursor: pointer;
 		transition: 0.2s ease;
+
+		&:hover {
+			h2 {
+				margin-left: 2.5rem;
+				transition: 0.2s ease;
+			}
+			p {
+				margin-left: 2.5rem;
+				transition: 0.2s ease;
+				color: green;
+			}
+
+			h2::before {
+				content: '';
+				width: 2.3rem;
+				height: 1.5rem;
+				background-color: #ffc800;
+				position: absolute;
+				top: 1;
+				left: -0.5rem;
+				transition: 0.2s ease;
+			}
+		}
+
+		img {
+			display: block;
+			max-width: 100%;
+			border-radius: 4px;
+		}
 	}
 }
 
@@ -130,77 +130,72 @@
 	justify-content: center;
 	background-color: #141414;
 	width: 100%;
-	height: 130vh;
+	height: 115vh;
 	color: white;
 	position: relative;
 
 	.tools-photo {
-		height: 150vh;
-		width: 30rem;
+		height: 130vh;
+		width: 30%;
 		object-fit: cover;
-		top: -5rem;
-		right: 8rem;
+		top: -4rem;
+		right: 7rem;
 		position: absolute;
 		object-position: start center;
 	}
-}
 
-.b-cc-container {
-	display: grid;
-	grid-template-columns: 1.5fr 1fr;
-	height: 75vh;
-	width: 75%;
-
-	#bcc-title {
-		padding-top: 5.5rem;
-	}
-
-	div {
+	.b-cc-container {
 		display: flex;
-		flex-direction: row;
 		flex-direction: column;
-		gap: 2rem 0;
+		justify-content: center;
+		width: 75%;
 
-		h2 {
-			font-size: 1.5rem;
-			color: #b2b2b2;
-		}
-		h1 {
-			font-size: 4rem;
-		}
-		p {
-			font-size: 1.5rem;
-			color: #b2b2b2;
-		}
-
-		#choose-bike {
-			color: #ffc800;
-			cursor: pointer;
-			text-decoration: underline;
-
-			&:hover {
-				color: white;
-			}
-		}
-
-		.mini-card-bcc-container {
+		div {
 			display: flex;
-			flex-direction: row;
-			gap: 0 1rem;
+			width: 65%;
+			flex-direction: column;
+			gap: 2rem 0;
 
-			div {
-				display: flex;
-				width: 20rem;
-				padding-top: 2rem;
+			h2 {
+				font-size: 1.5rem;
+				color: #b2b2b2;
+			}
+			h1 {
+				font-size: 3rem;
+			}
+			p {
+				font-size: 1.3rem;
+				color: #b2b2b2;
+			}
 
-				img {
-					display: block;
-					max-width: 100%;
-					width: 1.5rem;
+			#choose-bike {
+				color: #ffc800;
+				cursor: pointer;
+				text-decoration: underline;
+
+				&:hover {
+					color: white;
 				}
+			}
 
-				p {
-					font-size: 1rem;
+			.mini-card-bcc-container {
+				display: flex;
+				flex-direction: row;
+				gap: 0 1rem;
+
+				div {
+					display: flex;
+					width: 100%;
+					padding: 2rem 0;
+
+					img {
+						display: block;
+						width: 1.5rem;
+					}
+
+					p {
+						font-size: 1rem;
+					}
 				}
 			}
 		}
@@ -208,8 +203,8 @@
 }
 
 .partner-container {
-	padding-top: 8rem;
-	display: none;
+	padding: 8rem 0;
+	display: flex;
 	width: 100%;
 	background-color: white;
 	flex-direction: column;
@@ -293,13 +288,14 @@
 	width: 100%;
 	background-color: #141414;
 	color: white;
+	padding: 3rem 0;
 
 	.secures-container {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
+		gap: 3rem 0;
 		width: 75%;
-		height: 90vh;
 		padding: 3rem 0;
 
 		h1 {
@@ -312,17 +308,17 @@
 
 		.scc-container {
 			display: flex;
-			justify-content: space-between;
+			gap: 0 3rem;
 		}
 
 		.secures-card {
 			display: flex;
 			flex-direction: column;
+			padding: 4rem;
+			gap: 2.5rem;
 			justify-content: space-between;
-			padding: 3rem;
-			width: 28rem;
-			height: 25rem;
 			background-color: black;
+			border-radius: 5px;
 
 			div {
 				display: flex;
@@ -378,6 +374,398 @@
 
 				&:hover {
 					background-color: grey;
+				}
+			}
+		}
+	}
+}
+
+//////////////////////////////////////////////////////
+
+@media (min-width: 1920px) {
+	.home-container {
+		div {
+			h1 {
+				font-size: 4.5rem;
+			}
+
+			p {
+				font-size: 1.5rem;
+				margin-bottom: 2rem;
+			}
+
+			button {
+				font-size: 1.5rem;
+				padding: 1.3rem 1.5rem;
+			}
+		}
+
+		img {
+			height: 88vh;
+			width: 38rem;
+		}
+	}
+
+	.bike-example {
+		height: 120vh;
+
+		h1 {
+			font-size: 4rem;
+			margin-left: 14rem;
+		}
+	}
+
+	.bike-card {
+		h2 {
+			font-size: 2rem;
+		}
+
+		p {
+			font-size: 1.5rem;
+		}
+	}
+
+	.bike-custom-components {
+		height: 100vh;
+
+		.tools-photo {
+			height: 115vh;
+			width: 30%;
+		}
+
+		.b-cc-container {
+			div {
+				gap: 3rem 0;
+
+				h1 {
+					font-size: 4rem;
+				}
+
+				h2 {
+					font-size: 2rem;
+				}
+
+				.mini-card-bcc-container {
+					div {
+						img {
+							width: 2rem;
+						}
+						p {
+							font-size: 1.1rem;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.testimony-container {
+		.tc-info {
+			p {
+				width: 80%;
+				font-size: 2rem;
+			}
+
+			span {
+				font-size: 1.5rem;
+			}
+		}
+	}
+
+	.secures {
+		.secures-container {
+			h1 {
+				font-size: 4rem;
+			}
+
+			.secures-card {
+				div {
+					h1 {
+						font-size: 2.5rem;
+					}
+				}
+
+				ul {
+					li {
+						font-size: 1.5rem;
+					}
+				}
+
+				button {
+					padding: 1.3rem 1.8rem;
+					border-radius: 5px;
+					font-size: 1.4rem;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1050px) {
+	.home-container {
+		width: 90%;
+
+		div {
+			gap: 4rem;
+
+			h1 {
+				font-size: 4rem;
+			}
+
+			p {
+				font-size: 1.5rem;
+			}
+
+			button {
+				font-size: 1.5rem;
+				padding: 1.5rem 1.8rem;
+			}
+		}
+
+		img {
+			height: 80vh;
+			width: 50%;
+			object-position: 70%;
+		}
+	}
+
+	.bike-example {
+		h1 {
+			margin-left: 4rem;
+		}
+
+		.ex-card-container {
+			padding: 3rem 1rem;
+		}
+	}
+
+	.bike-custom-components {
+		height: auto;
+
+		.tools-photo {
+			height: 110%;
+			top: -3rem;
+			right: 3rem;
+		}
+
+		.b-cc-container {
+			padding: 5rem 0;
+
+			.mini-card-bcc-container {
+				width: 100%;
+
+				p {
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+
+	.partner-container {
+		gap: 2rem 0;
+
+		h1 {
+			margin-left: 3rem;
+		}
+
+		ul {
+			grid-template-columns: 1fr 1fr;
+
+			li {
+				padding: 2rem;
+				border-bottom: 1px solid #d9d9d9;
+			}
+			li:nth-child(odd) {
+				border-right: 1px solid #d9d9d9;
+			}
+			li:nth-child(even) {
+				border-right: none;
+			}
+			li:nth-child(7) {
+				border-bottom: none;
+			}
+			li:nth-child(8) {
+				border-bottom: none;
+			}
+		}
+	}
+
+	.testimony-container {
+		grid-template-columns: 1.5fr 1fr;
+		height: auto;
+
+		.tc-info {
+			margin: 3rem 1.5rem;
+			p {
+				width: 100%;
+			}
+		}
+	}
+
+	.secures {
+		.secures-container {
+			width: 90%;
+			gap: 3rem;
+
+			.scc-container {
+				gap: 0 1.5rem;
+			}
+
+			.secures-card {
+				padding: 3rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 799px) {
+	.home-container {
+		display: flex;
+		height: 35rem;
+		width: 90%;
+
+		div {
+			place-content: normal;
+			gap: 2rem 0;
+			padding: 1.5rem 0;
+
+			h1 {
+				font-size: 2rem;
+			}
+
+			p {
+				font-size: 1rem;
+			}
+
+			button {
+				padding: 1rem 1rem;
+				font-size: 0.8rem;
+			}
+		}
+
+		img {
+			border-radius: 4px;
+			bottom: -4rem;
+			width: 100%;
+			height: 15em;
+		}
+	}
+
+	.bike-example {
+		height: 50rem;
+
+		h1 {
+			margin-left: 1rem;
+			font-size: 2rem;
+		}
+
+		.ex-card-container {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			padding: 1.5rem 1rem;
+			overflow-x: scroll;
+			gap: 1rem;
+			height: 100%;
+		}
+
+		.bike-card {
+			&:hover {
+				h2 {
+					margin: 0;
+				}
+				p {
+					margin: 0;
+					color: initial;
+				}
+				h2::before {
+					content: initial;
+				}
+			}
+
+			img {
+				width: 20rem;
+				max-width: auto;
+			}
+		}
+	}
+
+	.bike-custom-components {
+		.tools-photo {
+			display: none;
+		}
+
+		.b-cc-container {
+			width: 90%;
+
+			div {
+				width: 100%;
+
+				h1 {
+					font-size: 2rem;
+				}
+
+				p {
+					font-size: 1rem;
+				}
+
+				.mini-card-bcc-container {
+					flex-direction: column;
+					gap: 1rem 0;
+				}
+			}
+		}
+	}
+
+	.partner-container {
+		padding: 4rem 0;
+
+		h1 {
+			font-size: 2rem;
+			margin-left: 1rem;
+		}
+
+		ul {
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: repeat(4, 1fr);
+			padding: 0;
+
+			li {
+				padding: 0.5rem 0;
+
+				img {
+					display: block;
+					max-width: 60%;
+				}
+			}
+		}
+	}
+
+	.testimony-container {
+		display: none;
+	}
+
+	.secures {
+		.secures-container {
+			padding: 1.5rem 0;
+			width: 90%;
+
+			h1 {
+				font-size: 2rem;
+			}
+
+			.scc-container {
+				flex-direction: column;
+				gap: 3rem 0;
+			}
+
+			.secures-card {
+				padding: 3rem;
+
+				div {
+					h1 {
+						font-size: 1.5rem;
+					}
 				}
 			}
 		}

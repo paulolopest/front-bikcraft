@@ -42,19 +42,16 @@ const Home = () => {
 				<div className="ex-card-container">
 					<div className="bike-card">
 						<img src={bike1} alt=""></img>
-						<span></span>
 						<h2>Nimbus Stark</h2>
 						<p>R$ 4999</p>
 					</div>
 					<div className="bike-card">
 						<img src={bike2} alt=""></img>
-						<span></span>
 						<h2>Nebula Cosmic</h2>
 						<p>R$ 3999</p>
 					</div>
 					<div className="bike-card">
 						<img src={bike3} alt=""></img>
-						<span></span>
 						<h2>Magic Might</h2>
 						<p>R$ 2499</p>
 					</div>
@@ -143,7 +140,7 @@ const Home = () => {
 						Bikcraft have done is intensify my love for this activity. I
 						recommend it to everyone I love."
 					</p>
-					<span>Ana Júlia</span>
+					<span>- Ana Júlia</span>
 				</div>
 			</div>
 
