@@ -1,20 +1,21 @@
 import React from 'react';
-import homeBike from '../../img/bicicleta/nimbus1.jpg';
-import bike1 from '../../img/bicicletas/nimbus-home.jpg';
-import bike2 from '../../img/bicicletas/nebula-home.jpg';
-import bike3 from '../../img/bicicletas/magic-home.jpg';
-import tracker from '../../img/icones/rastreador.svg';
-import electricEngine from '../../img/icones/eletrica.svg';
-import customTools from '../../img/fotos/tecnologia.jpg';
-import partner1 from '../../img/parceiros/caravan.svg';
-import partner2 from '../../img/parceiros/dogs.svg';
-import partner3 from '../../img/parceiros/flexblog.svg';
-import partner4 from '../../img/parceiros/handel.svg';
-import partner5 from '../../img/parceiros/lescone.svg';
-import partner6 from '../../img/parceiros/ranek.svg';
-import partner7 from '../../img/parceiros/surfbot.svg';
-import partner8 from '../../img/parceiros/wildbeast.svg';
-import testimony from '../../img/fotos/depoimento.jpg';
+import homeBike from '../img/bicicleta/nimbus1.jpg';
+import bike1 from '../img/bicicletas/nimbus-home.jpg';
+import bike2 from '../img/bicicletas/nebula-home.jpg';
+import bike3 from '../img/bicicletas/magic-home.jpg';
+import tracker from '../img/icones/rastreador.svg';
+import electricEngine from '../img/icones/eletrica.svg';
+import customTools from '../img/fotos/tecnologia.jpg';
+import partner1 from '../img/parceiros/caravan.svg';
+import partner2 from '../img/parceiros/dogs.svg';
+import partner3 from '../img/parceiros/flexblog.svg';
+import partner4 from '../img/parceiros/handel.svg';
+import partner5 from '../img/parceiros/lescone.svg';
+import partner6 from '../img/parceiros/ranek.svg';
+import partner7 from '../img/parceiros/surfbot.svg';
+import partner8 from '../img/parceiros/wildbeast.svg';
+import testimony from '../img/fotos/depoimento.jpg';
+import teste from '../';
 
 const Home = () => {
 	return (
